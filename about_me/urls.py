@@ -7,7 +7,3 @@ router = DefaultRouter()
 router.register('', views.MeViewSet, basename='me')
 
 urlpatterns = [] + router.urls
-
-# urlpatterns = [
-    # path('', views.MeViewSet.as_view({'get': 'list'}), name='me'),
-# ]
