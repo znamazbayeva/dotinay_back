@@ -140,10 +140,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+STATIC_ROOT = env('STATIC_PATH')
+MEDIA_ROOT = env('MEDIA_PATH')
 MEDIA_URL = '/media/'
 CKEDITOR_UPLOAD_PATH = 'uploads/'
 
