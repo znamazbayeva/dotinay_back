@@ -37,8 +37,8 @@ schema_view = get_schema_view(
 urlpatterns = [
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='swagger'),
     path('admin/', admin.site.urls),
-    path('me/', include('about_me.urls')),
-    path('projects/', include('projects.urls')),
-    path('posts/', include('posts.urls')),
+    path('api/me/', include('about_me.urls')),
+    path('api/projects/', include('projects.urls')),
+    path('api/posts/', include('posts.urls')),
     path('ckeditor/', include('ckeditor_uploader.urls')),
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
