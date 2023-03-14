@@ -85,8 +85,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'dotinay.wsgi.application'
 
-CORS_ALLOWED_ORIGINS = ['*']
-
+CORS_ALLOW_ALL_ORIGINS = True
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
