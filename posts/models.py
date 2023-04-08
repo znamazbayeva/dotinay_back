@@ -9,4 +9,5 @@ class Post(models.Model):
   subtitle = models.CharField(max_length=200, null=True, blank=True)
   content = RichTextField()
   photo = models.ImageField()
+  created_at = models.DateField(auto_now_add=True)
 
