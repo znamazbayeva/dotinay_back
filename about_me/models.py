@@ -7,5 +7,5 @@ class Me(models.Model):
     occupation = models.CharField(max_length=200, null=True, blank=True)
     intro = models.CharField(max_length=200, null=True, blank=True)
     photo = models.ImageField()
-    content = RichTextField(null=True)
+    content = RichTextField()
 
